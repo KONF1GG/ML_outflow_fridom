@@ -1,11 +1,11 @@
 import pandas as pd
 
 # of an excel file  
-read_file = pd.read_excel ("combined_file_123.xlsx") 
+read_file = pd.read_excel ("MyDataset.xlsx") 
   
 # Write the dataframe object 
 # into csv file 
-read_file.to_csv ("combined_file_123.csv",  
+read_file.to_csv ("MyDataset.csv",  
                   index = None, 
                   header=True) 
     
