@@ -1,24 +1,41 @@
 import pandas as pd
 
-# Загрузка данных из первого файла
-file1 = 'data/backup3/21.xls'
-df1 = pd.read_excel(file1)
+df1 = pd.read_excel('DATASET/backup/afp21.xls')
 
-# Загрузка данных из второго файла
-file2 = 'data/backup3/22.xls'
-df2 = pd.read_excel(file2)
+df2 = pd.read_excel('DATASET/backup/afp22.xls')
 
-file3 = 'data/backup3/23.xls'
-df3 = pd.read_excel(file3)
+df3 = pd.read_excel('DATASET/backup/afp23.xls')
 
-file4 = 'data/backup3/24.xls'
-df4 = pd.read_excel(file4)
+df4 = pd.read_excel('DATASET/backup/afp24.xls')
 
+df5 = pd.read_excel('DATASET/backup/il21.xls')
+
+df6 = pd.read_excel('DATASET/backup/il22.xls')
+
+df7 = pd.read_excel('DATASET/backup/il23.xls')
+
+df8 = pd.read_excel('DATASET/backup/il24.xls')
+
+df9 = pd.read_excel('DATASET/backup/ur21.xls')
+
+df10 = pd.read_excel('DATASET/backup/ur22.xls')
+
+df11 = pd.read_excel('DATASET/backup/ur23.xls')
+
+df12 = pd.read_excel('DATASET/backup/ur24.xls')
+
+df13 = pd.read_excel('DATASET/backup/vas21.xls')
+
+df14 = pd.read_excel('DATASET/backup/vas22.xls')
+
+df15 = pd.read_excel('DATASET/backup/vas23.xls')
+
+df16 = pd.read_excel('DATASET/backup/vas24.xls')
 # Объединение данных
-combined_df = pd.concat([df1, df2, df3, df4])
+combined_df = pd.concat([df1, df2, df3, df4, df5, df6, df7, df8, df9, df10, df11, df12, df13, df14, df15, df16 ])
 
 # Сохранение объединенных данных в новый файл
-output_file = 'MyDataset_month.xlsx'
+output_file = 'DATASET/MyDataset.xlsx'
 combined_df.to_excel(output_file, index=False)
 
 print(f"Данные успешно объединены и сохранены в {output_file}")
